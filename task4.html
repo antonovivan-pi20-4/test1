@@ -1,0 +1,75 @@
+<html>
+<head>   
+</head>  
+<script>
+    //Задача 1
+    var answer=0;
+    var quest1 =prompt('Год окончания Великой Отечественной войны?');
+    if (quest1=='1945'){
+        alert('Верно');
+        answer= answer+1;
+    } else {
+        alert('Не верно');
+    }
+    var quest2 =prompt('Какой первый месяц года?');
+    if (quest2=='январь'){
+        alert('Верно');
+        answer= answer+1;
+    } else {
+        alert('Не верно');
+    }
+    result1='Правильных ответов: ' + answer
+    alert(result1)
+    
+    //Задача 2
+    for (let i = 1; i <= 10; i++) {
+        alert(i);
+    }
+
+    //Задача 3
+    
+    while(true) {
+    var a = prompt('Если хотите завершить, введите "1"');
+    if(a == 1)  break
+    else {
+        alert('Еще по одной?')
+    }
+    }
+    alert('Конец')
+
+    //Задача 4
+    var n=1
+    for (let i =1; i<2; i++){
+        n=n*i 
+    }
+    result4='Факториал 1 : ' + n
+    alert(result4)
+
+    //Задача 5
+    var name = prompt('Введите фамилию');
+    name2= name.split('').reverse().join('');
+    if (name == name2){
+        alert('Палиндром')
+    }
+    else{
+        alert('Не палиндром')
+    }
+
+    //Задача 6
+    var flag =0
+    for (var i =2; i<15; i++){
+        for (var j=2; j<i;j++){
+            if (i%j==0){
+                flag=1
+            }
+            flag=0
+        }
+        if (flag==0){
+            result6='Простое число : '+ i
+            alert(result6)
+        }
+        
+    }
+</script>
+</html>
+   
